@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #007bff;
+    --input-border: 1px solid #0c0c0c;
+}
+
+input {
+    padding: 10px;
+    border: var(--input-border);
+    border-radius: 4px;
+    margin: 10px;
+    width: 80%;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+    /* Remove default focus outline */
+    border-color: var(--primary-color);
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Add a subtle box shadow */
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
